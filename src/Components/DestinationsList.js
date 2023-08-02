@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import DestinationCard from "./DestinationCard";
 
 function DestinationList({ destination, setDestination }) {

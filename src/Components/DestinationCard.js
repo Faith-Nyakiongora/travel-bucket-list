@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function DestinationCard({ place }) {
   const { id, name, image_url, description, location } = place;
@@ -11,7 +12,11 @@ function DestinationCard({ place }) {
         <p className="card-text">{description}</p>
       </div>
       <div className="card-footer">
-        <button className="btn btn-sm btn-success">More details</button>
+        <button className="btn btn-sm btn-success">
+          <Link to={`/place/${id}`} className="btn btn-sm btn-success">
+            More Details
+          </Link>
+        </button>
       </div>
     </div>
   );
