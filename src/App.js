@@ -1,6 +1,8 @@
 // import logo from './logo.svg';
 // import './App.css';
 import React, { useEffect, useState } from "react";
+import SearchComponent from "./Components/SearchComponent";
+import AddDestinationComponent from "./Components/AddDestinationComponent";
 
 function App() {
   const [destinations, setDestinations] = useState([]);
@@ -13,14 +15,19 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <h1>Destinations:</h1>
-      <ul>
-        {destinations.map((destination) => (
-          <li key={destination.id}>{destination.name}</li>
-        ))}
-      </ul>
-    </div>
+    <>
+      <SearchComponent />
+      <AddDestinationComponent />
+      <div>
+        <h1>Destinations:</h1>
+        <ul>
+          {destinations.map((destination) => (
+            <li key={destination.id}>{destination.name}</li>
+          ))}
+        </ul>
+      </div>
+
+    </>
   );
 }
 
