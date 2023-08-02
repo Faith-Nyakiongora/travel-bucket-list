@@ -217,7 +217,7 @@ Each destination fetched from the public API has the following structure:
 
 ##### Usage
 
-The app uses the public API to fetch destination details and images when a user views a specific destination in the bucket list. The data is then displayed to the user to provide more information about each destination.
+The app uses the local API to fetch destination details and images when a user views a specific destination in the bucket list. The data is then displayed to the user to provide more information about each destination.
 
 
 
