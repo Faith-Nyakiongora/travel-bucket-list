@@ -14,13 +14,8 @@ function DestinationCard({ place }) {
       <img src={image_url} className="card-img-top" alt=".." />
       <div className="card-body">
         <h4 className="card-title">{name}</h4>
-        <p className="card-text">{location}</p>
-        {showDescription && (
-          <p className="card-text">
-            {description}
-            {more}
-          </p>
-        )}
+        <p ClassName="card-text">{location}</p>
+        <p className="card-text">{description}</p>
       </div>
       <div className="card-footer">
         {/* <button className="btn btn-sm btn-success">More details</button> */}
