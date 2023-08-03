@@ -6,7 +6,10 @@ function Navbar() {
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand">Travel Bucket List</a>
+          <Link to="/" className="navbar-brand">
+            Travel Bucket List
+          </Link>
+
           <button
             className="navbar-toggler"
             type="button"
