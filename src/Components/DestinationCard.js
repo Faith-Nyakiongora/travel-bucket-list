@@ -15,6 +15,13 @@ function DestinationCard({ place }) {
       <div className="card-body">
         <h4 className="card-title">{name}</h4>
         <p className="card-text">{location}</p>
+
+        {showDescription && (
+          <p className="card-text">
+            {description}
+            {more}
+          </p>
+        )}
         {showDescription && (
           <p className="card-text">
             {description}
