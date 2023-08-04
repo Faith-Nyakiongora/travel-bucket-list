@@ -19,3 +19,9 @@ form input{
     border-radius: 6px;
     border: 1px solid;
 }
+
+.destinations{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

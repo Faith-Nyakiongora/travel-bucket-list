@@ -29,7 +29,7 @@ const fetchData = () => {
                 <input type="search" className="search-input" onChange={(e) => setSearch(e.target.value)} placeholder="Search city" />
             </div>
 
-            <div>
+            <div className="destinations">
              {data.filter((item) =>{
                 return search.toLowerCase() === '' ? item : item.name.toLowerCase().includes(search)
                 }).map(item => (
