@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 // import SearchComponent from "./SearchComponent";
+import DestinationCard from "./DestinationCard";
+import ReactDOM from 'react-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 
 function AddDestinationComponent(){
     const [data, setData] = useState([]);
@@ -16,14 +20,14 @@ function AddDestinationComponent(){
 
         const bucketlist = { name, description, image, details }
 
-        fetch('http://localhost:8000/bucketlist',{
+        fetch('http://localhost:3000/bucketlist',{
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(bucketlist)
         })
         .then(res => res.json())
         .then(data => {
-            setData((oldData) => [...oldData, data])
+            setData((prevDestinations) => [...prevDestinations, data]);
             setName('')
             setDescription('')
             setImage('')
@@ -37,6 +41,11 @@ function AddDestinationComponent(){
             <h3>Bucket List</h3>
             <div>
                 <form onSubmit={handleSubmit}>
+
+                <div className="search-container">
+                    <input type="search" className="search-input" onChange={(e) => setSearch(e.target.value)} placeholder="Search your Bucket List" />
+                </div>
+
                     <div>
                     <input type="text" 
                     id="name" 
@@ -73,34 +82,15 @@ function AddDestinationComponent(){
                 </form>
             </div>
 
+            <div>
+             {data.filter((item) =>{
+                return search.toLowerCase() === '' ? item : item.name.toLowerCase().includes(search)
+                }).map(item => (
+                <DestinationCard key={item.id} place={item}/>
+
+                ))}
+            </div>
             
-            <div className="search-container">
-                <input type="search" className="search-input" onChange={(e) => setSearch(e.target.value)} placeholder="Search your Bucket List" />
-            </div>
-            <div className='table-container'>
-                <table>
-                <thead>
-                    <tr>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>Image</th>
-                    <th>Details</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {data.filter((item) =>{
-                    return search.toLowerCase() === '' ? item : item.name.toLowerCase().includes(search)
-                    }).map(item => (
-                    <tr key={item.id}>
-                        <td>{item.name}</td>
-                        <td>{item.description}</td>
-                        <td>{item.image}</td>
-                        <td>{item.more}</td>
-                    </tr>
-                    ))}
-                </tbody>
-                </table>
-            </div>
         </>
     )
         

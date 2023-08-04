@@ -1,0 +1,21 @@
+.search-input{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid;
+    width: 100%;
+}
+
+form input{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid;
+}
+
+.button{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid;
+}
