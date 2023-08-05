@@ -7,7 +7,7 @@ import DestinationList from "./Components/DestinationList";
 import Navbar from "./Components/Navbar";
 import Search from "./Components/SearchComponent";
 import AddDestination from "./Components/AddDestination.js";
-import DestinationDetailsComponent from "./Components/DestinationDetailsComponent";
+// import DestinationDetailsComponent from "./Components/DestinationDetailsComponent";
 import BucketList from "./Components/BucketList";
 // import BucketListComponent from "./Components/BucketListComponent";
 
