@@ -3,15 +3,18 @@
 
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import DestinationList from "./Components/DestinationsList";
+import DestinationList from "./Components/DestinationList";
 import Navbar from "./Components/Navbar";
 import Search from "./Components/SearchComponent";
 import AddDestination from "./Components/AddDestination.js";
-import BucketList from "./Components/BucketListComponent";
-import DestinationDetails from "./Components/DestinationDetailsComponent";
+import DestinationDetailsComponent from "./Components/DestinationDetailsComponent";
+import BucketList from "./Components/BucketList";
+// import BucketListComponent from "./Components/BucketListComponent";
 
 function App() {
   const [destination, setDestination] = useState([]);
+  const [bucketList, setBucketList] = useState([]);
+
   useEffect(() => {
     fetch("http://localhost:3000/places")
       .then((response) => response.json())
@@ -29,27 +32,30 @@ function App() {
     setDestination(updatedDestinations);
   };
 
+  // const addToBucketList = (destinationId) => {
+  //   const destinationToAdd = destination.find(
+  //     (dest) => dest.id === destinationId
+  //   );
+  //   if (destinationToAdd) {
+  //     setBucketList([...bucketList, destinationToAdd]);
+  //   }
+  // };
+
   return (
     <div className="container">
       <Navbar />
       <h1>Travel Bucketlist</h1>
       <Search destinations={destination} />
+      <DestinationList
+        destination={destination}
+        setDestination={setDestination}
+        bucketList={bucketList}
+        setBucketList={setBucketList}
+      />
       <AddDestination addDestination={addDestination} />
-      <BucketList />
-      <Routes>
-        <Route path="/bucketlist" element={<BucketList />} />
-        <Route path="/bucketlist/:id" element={<DestinationDetails />} />
-        <Route
-          path="/DestinationList"
-          element={
-            <DestinationList
-              destination={destination}
-              setDestination={setDestination}
-            />
-          }
-        />
-        <Route path="/Home" />
-      </Routes>
+      <BucketList bucketList={bucketList} setBucketList={setBucketList} />
+
+      {/* <DestinationDetailsComponent destinations={destination} /> */}
     </div>
   );
 }

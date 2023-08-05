@@ -1,15 +1,40 @@
-import React from "react";
+// import React from "react";
+// import { useParams } from "react-router-dom";
 
-const DestinationDetails = ({ place }) => {
-  return (
-    <div>
-      <h2>{place.name}</h2>
-      <img src={place.image_url} alt={place.name} />
-      <p>{place.description}</p>
-      <p>{place.location}</p>
-      <p>{place.more}</p>
-    </div>
-  );
-};
+// function DestinationDetailsComponent({ destinations }) {
+//   const { id } = useParams();
+//   const destination = destinations.find((place) => place.id === parseInt(id));
 
-export default DestinationDetails;
+//   if (!destination) {
+//     return <div>Destination not found.</div>;
+//   }
+
+//   const {
+//     name,
+//     description,
+//     location,
+//     more,
+//     best_time_to_visit,
+//     traveling_tips,
+//     attractions,
+//   } = destination;
+
+//   return (
+//     <div>
+//       <h2>{name}</h2>
+//       <h3>
+//         <p>{location}</p>
+//       </h3>
+//       <p>{description}</p>
+//       <p>{more}</p>
+//       <h5>Best Time To Visit</h5>
+//       <p>{best_time_to_visit}</p>
+//       <h5>Traveling Tips</h5>
+//       <p>{traveling_tips}</p>
+//       <h5>Attractions</h5>
+//       <p>{attractions}</p>
+//     </div>
+//   );
+// }
+
+// export default DestinationDetailsComponent;
