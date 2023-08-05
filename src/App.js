@@ -32,20 +32,12 @@ function App() {
     setDestination(updatedDestinations);
   };
 
-  // const addToBucketList = (destinationId) => {
-  //   const destinationToAdd = destination.find(
-  //     (dest) => dest.id === destinationId
-  //   );
-  //   if (destinationToAdd) {
-  //     setBucketList([...bucketList, destinationToAdd]);
-  //   }
-  // };
-
   return (
     <div className="container">
       <Navbar />
       <h1>Travel Bucketlist</h1>
-      <Search destinations={destination} />
+      <BucketList bucketList={bucketList} setBucketList={setBucketList} />
+      {/* <Search destinations={destination} /> */}
       <DestinationList
         destination={destination}
         setDestination={setDestination}
@@ -53,7 +45,6 @@ function App() {
         setBucketList={setBucketList}
       />
       <AddDestination addDestination={addDestination} />
-      <BucketList bucketList={bucketList} setBucketList={setBucketList} />
 
       {/* <DestinationDetailsComponent destinations={destination} /> */}
     </div>

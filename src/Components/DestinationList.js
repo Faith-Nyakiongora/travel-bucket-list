@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import DestinationCard from "./DestinationCard";
 
@@ -8,6 +8,9 @@ function DestinationList({
   bucketList,
   setBucketList,
 }) {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [filteredDestinations, setFilteredDestinations] = useState([]);
+
   useEffect(() => {
     fetch("http://localhost:3000/places")
       .then((data) => data.json())
@@ -16,22 +19,42 @@ function DestinationList({
       });
   }, []);
 
+  useEffect(() => {
+    const filteredPlaces = destination.filter(
+      (place) =>
+        place.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        place.location.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setFilteredDestinations(filteredPlaces);
+  }, [destination, searchTerm]);
+
   function addToBucketList(place) {
     if (!bucketList.some((addDestination) => addDestination.id === place.id)) {
       setBucketList((bucketList) => [...bucketList, place]);
     }
   }
 
+  const handleSearchChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
   return (
-    <div className="row">
-      {destination.map((place) => (
-        <DestinationCard
-          key={place.id}
-          place={place}
-          addToBucketList={() => addToBucketList(place)}
-          // addToBucketList={addToBucketList} // Make sure you are passing it here as well
-        />
-      ))}
+    <div>
+      <input
+        type="text"
+        placeholder="Search destinations..."
+        value={searchTerm}
+        onChange={handleSearchChange}
+      />
+      <div className="row">
+        {filteredDestinations.map((place) => (
+          <DestinationCard
+            key={place.id}
+            place={place}
+            addToBucketList={() => addToBucketList(place)}
+          />
+        ))}
+      </div>
     </div>
   );
 }
