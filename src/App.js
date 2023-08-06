@@ -1,15 +1,10 @@
-// import logo from './logo.svg';
-// import './App.css';
-
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import DestinationList from "./Components/DestinationList";
-import Navbar from "./Components/Navbar";
-import Search from "./Components/SearchComponent";
+import NavbarComp from "./Components/Navbar";
 import AddDestination from "./Components/AddDestination.js";
-import DestinationDetailsComponent from "./Components/DestinationDetailsComponent";
 import BucketList from "./Components/BucketList";
-// import BucketListComponent from "./Components/BucketListComponent";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [destination, setDestination] = useState([]);
@@ -34,19 +29,31 @@ function App() {
 
   return (
     <div className="container">
-      <Navbar />
+      <NavbarComp />
       <h1>Travel Bucketlist</h1>
-      <BucketList bucketList={bucketList} setBucketList={setBucketList} />
-      {/* <Search destinations={destination} /> */}
-      <DestinationList
-        destination={destination}
-        setDestination={setDestination}
-        bucketList={bucketList}
-        setBucketList={setBucketList}
-      />
-      <AddDestination addDestination={addDestination} />
-
-      {/* <DestinationDetailsComponent destinations={destination} /> */}
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <DestinationList
+              destination={destination}
+              setDestination={setDestination}
+              bucketList={bucketList}
+              setBucketList={setBucketList}
+            />
+          }
+        />
+        <Route
+          path="/bucketlist"
+          element={
+            <BucketList bucketList={bucketList} setBucketList={setBucketList} />
+          }
+        />
+        <Route
+          path="/adddestination"
+          element={<AddDestination addDestination={addDestination} />}
+        />
+      </Routes>
     </div>
   );
 }
