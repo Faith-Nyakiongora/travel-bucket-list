@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import DestinationCard from "./DestinationCard";
+import Form from "react-bootstrap/Form";
 
 function DestinationList({
   destination,
@@ -40,12 +41,18 @@ function DestinationList({
 
   return (
     <div>
-      <input
+      <Form value={searchTerm} onChange={handleSearchChange}>
+        <Form.Group className="mb-3" controlId="formGroupEmail">
+          <Form.Label>Search Destinations</Form.Label>
+          <Form.Control type="text" placeholder="Search destinations..." />
+        </Form.Group>
+      </Form>
+      {/* <input
         type="text"
         placeholder="Search destinations..."
         value={searchTerm}
         onChange={handleSearchChange}
-      />
+      /> */}
       <div className="row">
         {filteredDestinations.map((place) => (
           <DestinationCard

@@ -14,7 +14,7 @@ function NavbarComp() {
     >
       <Container>
         <Navbar.Brand as={Link} to="/">
-          React-Bootstrap
+          The Travel BucketList
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
