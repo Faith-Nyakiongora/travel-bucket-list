@@ -43,7 +43,9 @@ function DestinationList({
     <div>
       <Form value={searchTerm} onChange={handleSearchChange}>
         <Form.Group className="mb-3" controlId="formGroupEmail">
-          <Form.Label>Search Destinations</Form.Label>
+          <Form.Label>
+            <h3>Search Destinations</h3>
+          </Form.Label>
           <Form.Control type="text" placeholder="Search destinations..." />
         </Form.Group>
       </Form>
