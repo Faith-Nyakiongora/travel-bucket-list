@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function DestinationCard({ place, destination, addToBucketList }) {
-  const { id, name, image_url, description, location, more } = place;
+  const { id, name, image_url, location, more } = place;
 
   const [showDescription, setShowDescription] = useState(false);
 
@@ -19,22 +19,17 @@ function DestinationCard({ place, destination, addToBucketList }) {
         <p className="card-text">{location}</p>
         {showDescription && (
           <p className="card-text">
-            {description}
+            {place.description}
             {more}
-            <button
-              className="btn btn-sm btn-success"
-              onClick={addToBucketList}
-            >
-              Add to bucketlist
-            </button>
+            <br></br>
+            <Link to={`/destination/${id}`}>More Details</Link>
           </p>
         )}
-        <p ClassName="card-text">{location}</p>
-        <p className="card-text">{description}</p>
       </div>
       <div className="card-footer">
-        <Link to={`/destination/${id}`}>View Details</Link>
-        {/* <button className="btn btn-sm btn-success">More details</button> */}
+        <button className="btn btn-sm btn-success" onClick={addToBucketList}>
+          Add to bucketlist
+        </button>
       </div>
     </div>
   );

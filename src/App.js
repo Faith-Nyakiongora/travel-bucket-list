@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import DestinationList from "./Components/DestinationList";
 import NavbarComp from "./Components/Navbar";
 import AddDestination from "./Components/AddDestination.js";
 import BucketList from "./Components/BucketList";
 import "bootstrap/dist/css/bootstrap.min.css";
+import DestinationDetailsComponent from "./Components/DestinationDetailsComponent";
 
 function App() {
   const [destination, setDestination] = useState([]);
@@ -52,6 +53,10 @@ function App() {
         <Route
           path="/adddestination"
           element={<AddDestination addDestination={addDestination} />}
+        />
+        <Route
+          path="/destination/:id"
+          element={<DestinationDetailsComponent destinations={destination} />}
         />
       </Routes>
     </div>
