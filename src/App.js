@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="container">
       <NavbarComp />
-      <h1>Travel Bucketlist</h1>
+      <h1>Destinations</h1>
       <Routes>
         <Route
           path="/"

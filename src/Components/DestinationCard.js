@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import Button from "react-bootstrap/Button";
 
 function DestinationCard({ place, destination, addToBucketList }) {
   const { id, name, image_url, location, more } = place;
@@ -17,19 +18,24 @@ function DestinationCard({ place, destination, addToBucketList }) {
       <div className="card-body">
         <h4 className="card-title">{name}</h4>
         <p className="card-text">{location}</p>
+        <p className="card-text">{description}</p>
         {showDescription && (
-          <p className="card-text">
-            {place.description}
-            {more}
-            <br></br>
-            <Link to={`/destination/${id}`}>More Details</Link>
-          </p>
+          <div>
+            <p className="card-text">
+              {place.description}
+              {more}
+              <br></br>
+            </p>
+            <button className="btn btn-sm btn-success">
+              <Link to={`/destination/${id}`}>More Details</Link>
+            </button>
+          </div>
         )}
       </div>
       <div className="card-footer">
-        <button className="btn btn-sm btn-success" onClick={addToBucketList}>
+        <Button variant="primary" onClick={addToBucketList}>
           Add to bucketlist
-        </button>
+        </Button>{" "}
       </div>
     </div>
   );

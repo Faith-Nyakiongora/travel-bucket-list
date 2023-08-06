@@ -17,3 +17,9 @@ code {
 .navbar {
   background-color: #6f8660;
 }
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
