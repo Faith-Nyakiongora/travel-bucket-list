@@ -26,8 +26,8 @@ function DestinationCard({ place, destination, addToBucketList }) {
               {more}
               <br></br>
             </p>
-            <Button variant="outline-warning">
-              <Link to={`/destination/${id}`}>More Details</Link>
+            <Button variant="info" as={Link} to={`/destination/${id}`}>
+              More Details
             </Button>
           </div>
         )}
