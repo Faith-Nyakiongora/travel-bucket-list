@@ -6,7 +6,10 @@
       "description": "The City of Love",
       "location": "France",
       "image_url": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-      "more": "Paris, the City of Light, offers iconic landmarks, world-class art, chic fashion, and a romantic ambiance, making it a must-visit destination for every traveler."
+      "more": "Paris, the City of Light, offers iconic landmarks, world-class art, chic fashion, and a romantic ambiance, making it a must-visit destination for every traveler.",
+      "best_time_to_visit": "Best time to visit: Spring (April to June) and Fall (September to November) are considered the best times to visit Paris, as the weather is mild, and the city is less crowded compared to the peak summer months.",
+      "traveling_tips": "Use public transportation like the Metro to get around the city easily and avoid peak tourist hours at major attractions. Learning a few basic French phrases can also be helpful.",
+      "attractions": " Eiffel Tower, Louvre Museum, Notre-Dame Cathedral, Montmartre, Champs-Élysées, Seine River Cruise, and Versailles Palace."
     },
     {
       "id": 2,
@@ -14,7 +17,11 @@
       "description": "The Big Apple",
       "location": "Unite States of America",
       "image_url": "https://images.unsplash.com/photo-1541336032412-2048a678540d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-      "more": "New York is renowned for its tall buildings, well-known neighborhoods, and boundless vitality. The Big Apple has a lot to offer, from baseball and pizza to Times Square and yellow taxis. Among the boroughs of the city, New York is renowned for its natural beauty, particularly the Thousand Island and Finger Lake districts."
+      "more": "New York is renowned for its tall buildings, well-known neighborhoods, and boundless vitality. The Big Apple has a lot to offer, from baseball and pizza to Times Square and yellow taxis. Among the boroughs of the city, New York is renowned for its natural beauty, particularly the Thousand Island and Finger Lake districts.",
+      "best_time_to_visit":"Spring (March to May) and Fall (September to November) offer pleasant weather and various cultural events. However, New York is a year-round destination.",
+      "traveling_tips":"Use the subway system to navigate the city efficiently, and consider getting a MetroCard for discounted fares. Be prepared to walk a lot and keep an eye on your belongings in crowded areas.",
+      "attractions":"Statue of Liberty, Times Square, Central Park, Empire State Building, Broadway shows, Metropolitan Museum of Art, and One World Observatory."
+
     },
     {
       "id": 3,
@@ -22,7 +29,10 @@
       "description": "The Capital of Japan",
       "location": "Japan",
       "image_url": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dG9reW98ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
-      "more": "Tokyo, the vibrant capital of Japan, offers a mesmerizing fusion of ancient traditions and modern innovation. From bustling markets to futuristic skyscrapers, Tokyo is an exhilarating cultural adventure."
+      "more": "Tokyo, the vibrant capital of Japan, offers a mesmerizing fusion of ancient traditions and modern innovation. From bustling markets to futuristic skyscrapers, Tokyo is an exhilarating cultural adventure.",
+      "best_time_to_visit":"Spring (March to May) and Autumn (September to November) are ideal, as the weather is mild and cherry blossoms bloom in spring.",
+      "traveling_tips":"Get a Suica or Pasmo card for easy access to Tokyo's extensive public transportation system. Respect local customs and etiquette, such as removing shoes in traditional establishments.",
+      "attractions":"Tokyo Skytree, Senso-ji Temple, Meiji Shrine, Tsukiji Outer Market, Shibuya Crossing, Akihabara, and the Imperial Palace."
     },
     {
       "id": 4,
@@ -30,7 +40,10 @@
       "description": "Scenic, coastal, diverse, historic, gem.",
       "location": "South Africa",
       "image_url": "https://images.unsplash.com/photo-1576485375217-d6a95e34d043?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c291dGglMjBhZnJpY2F8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
-      "more": "With plenty of sunshine, mountains, sea and rivers, South Africans tend to treat their country like a massive playground. For a taste of the great outdoors, hike to the top of Table Mountain; horse ride in the Drakensberg; watch whales in Hermanus; discover South Africa's urban culture on a guided walking tour of Johannesburg; paraglide over Cape Town's beaches; take a walking safari in the Kruger; cycle through the Cape Winelands; explore the forest canopy in the Garden Route; enjoy a round on one of the many world-class golf courses... You'll never have a dull moment when you visit South Africa!"
+      "more": "With plenty of sunshine, mountains, sea and rivers, South Africans tend to treat their country like a massive playground. For a taste of the great outdoors, hike to the top of Table Mountain; horse ride in the Drakensberg; watch whales in Hermanus; discover South Africa's urban culture on a guided walking tour of Johannesburg; paraglide over Cape Town's beaches; take a walking safari in the Kruger; cycle through the Cape Winelands; explore the forest canopy in the Garden Route; enjoy a round on one of the many world-class golf courses... You'll never have a dull moment when you visit South Africa!",
+      "best_time_to_visit":"Cape Town's peak season is during the summer months (December to February), but Spring (September to November) and Autumn (March to May) offer milder weather and fewer crowds.",
+      "traveling_tips":"Be cautious with your belongings, especially in tourist areas. Consider renting a car to explore the surrounding attractions.",
+      "attractions":"Table Mountain, Cape of Good Hope, Robben Island, Boulders Beach (penguins), V&A Waterfront, Kirstenbosch National Botanical Garden, and Cape Winelands."
     },
     {
       "id": 5,
@@ -38,8 +51,10 @@
       "description": "The city under the sun",
       "location": "Kenya",
       "image_url": "https://images.unsplash.com/photo-1612253577861-6a8175a9dfb6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
-      "more": "Dynamic metropolis offering wildlife encounters, vibrant culture, historical landmarks, bustling markets, and proximity to Nairobi National Park."
-      
+      "more": "Dynamic metropolis offering wildlife encounters, vibrant culture, historical landmarks, bustling markets, and proximity to Nairobi National Park.",
+      "best_time_to_visit":" Nairobi enjoys a pleasant climate throughout the year, but the best time to visit is during the dry season from January to February and June to September. The weather is mild, making it ideal for wildlife safaris and city exploration.",
+      "traveling_tips":" Use reputable taxis or ridesharing services for transportation, and be cautious about your belongings in crowded areas. Embrace the local culture and cuisine, and try to support local businesses during your stay.",
+      "attractions":"Nairobi National Park offers a unique experience, where you can see wildlife against the backdrop of the city skyline. Visit the David Sheldrick Wildlife Trust to see orphaned elephants, and the Giraffe Centre to get up close with these gentle creatures. Explore the Karen Blixen Museum, dedicated to the author of and delve into the city's history at the Nairobi National Museum. Don't miss a chance to shop at the vibrant Maasai Market for traditional crafts and souvenirs.  "
     },
     {
       "id": 6,
@@ -47,7 +62,10 @@
       "description": "A glamorous oasis of modern marvels.",
       "location": "United Arab Emirates",
       "image_url": "https://images.unsplash.com/photo-1518684079-3c830dcef090?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-      "more": "A dazzling city of modern wonders and opulence, boasting skyscrapers, luxury shopping, extravagant attractions, and a vibrant cosmopolitan culture."
+      "more": "A dazzling city of modern wonders and opulence, boasting skyscrapers, luxury shopping, extravagant attractions, and a vibrant cosmopolitan culture.",
+      "best_time_to_visit":"November to March provides pleasant weather, avoiding the scorching heat of the summer months.",
+      "traveling_tips":"Respect local customs and traditions, dress modestly in public places, and avoid public displays of affection. Book your desert safaris and popular attractions in advance to secure your spot.",
+      "attractions":"Burj Khalifa, Dubai Mall, Palm Jumeirah, Dubai Marina, Dubai Creek, Jumeirah Mosque, and Desert Safari experiences."
     },
     {
       "id": 7,
@@ -55,7 +73,10 @@
       "description": "One of the most iconic monuments in the world.",
       "location": "India",
       "image_url": "https://images.unsplash.com/photo-1585506942812-e72b29cef752?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjN8fGluZGlhfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
-      "more": "A mesmerizing white marble mausoleum located in Agra, India, built by Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal. An architectural marvel, the Taj Mahal is a symbol of eternal love and a UNESCO World Heritage Site, attracting millions of visitors from around the globe. Also a culturally rich, diverse landscapes, historic heritage, vibrant festivals, enchanting traditions country."
+      "more": "A mesmerizing white marble mausoleum located in Agra, India, built by Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal. An architectural marvel, the Taj Mahal is a symbol of eternal love and a UNESCO World Heritage Site, attracting millions of visitors from around the globe. Also a culturally rich, diverse landscapes, historic heritage, vibrant festivals, enchanting traditions country.",
+      "best_time_to_visit":"October to March offers cooler temperatures, making it more comfortable for exploring the monument.",
+      "traveling_tips":" Arrive early in the morning to avoid the crowds and capture the Taj Mahal during the beautiful sunrise.",
+      "attractions":" Taj Mahal, Agra Fort, Fatehpur Sikri, Mehtab Bagh (for Taj Mahal sunset views), and local markets."
     },
     {
       "id": 8,
@@ -63,7 +84,10 @@
       "description": "A captivating tapestry of culture, colors, and contrasts.",
       "location": "Morroco",
       "image_url": "https://images.unsplash.com/photo-1580746738099-1cb74f972feb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80",
-      "more": "An exotic city in Morocco, famed for its bustling medina, ornate palaces, vibrant markets, and lively atmosphere."
+      "more": "An exotic city in Morocco, famed for its bustling medina, ornate palaces, vibrant markets, and lively atmosphere.",
+      "best_time_to_visit":"Spring (March to May) and Fall (September to November) are ideal due to milder weather.",
+      "traveling_tips":" Dress modestly, especially when visiting religious sites, and be prepared for bartering in the markets (souks).",
+      "attractions":"Jardin Majorelle, Medina (Old Town), Koutoubia Mosque, Bahia Palace, Saadian Tombs, and the vibrant souks."
     },
     {
       "id": 9,
@@ -71,7 +95,12 @@
       "description": "Scenic, coastal, diverse, historic, gem.",
       "location": "South Africa",
       "image_url": "https://images.unsplash.com/photo-1576485375217-d6a95e34d043?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c291dGglMjBhZnJpY2F8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
-      "more": "With plenty of sunshine, mountains, sea and rivers, South Africans tend to treat their country like a massive playground. For a taste of the great outdoors, hike to the top of Table Mountain; horse ride in the Drakensberg; watch whales in Hermanus; discover South Africa's urban culture on a guided walking tour of Johannesburg; paraglide over Cape Town's beaches; take a walking safari in the Kruger; cycle through the Cape Winelands; explore the forest canopy in the Garden Route; enjoy a round on one of the many world-class golf courses... You'll never have a dull moment when you visit South Africa!"
+      "more": "With plenty of sunshine, mountains, sea and rivers, South Africans tend to treat their country like a massive playground. For a taste of the great outdoors, hike to the top of Table Mountain; horse ride in the Drakensberg; watch whales in Hermanus; discover South Africa's urban culture on a guided walking tour of Johannesburg; paraglide over Cape Town's beaches; take a walking safari in the Kruger; cycle through the Cape Winelands; explore the forest canopy in the Garden Route; enjoy a round on one of the many world-class golf courses... You'll never have a dull moment when you visit South Africa!",
+      "best_time_to_visit":"Cape Town's peak season is during the summer months (December to February), but Spring (September to November) and Autumn (March to May) offer milder weather and fewer crowds.",
+      "traveling_tips":"Be cautious with your belongings, especially in tourist areas. Consider renting a car to explore the surrounding attractions.",
+      "attractions":"Table Mountain, Cape of Good Hope, Robben Island, Boulders Beach (penguins), V&A Waterfront, Kirstenbosch National Botanical Garden, and Cape Winelands."
     }
-  ]
+   
+  ],
+  "bucketlist": []
 }
