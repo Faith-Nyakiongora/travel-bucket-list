@@ -29,7 +29,7 @@ function DestinationCard({ place, destination, addToBucketList }) {
             </button>
           </p>
         )}
-        <p ClassName="card-text">{location}</p>
+        <p className="card-text">{location}</p>
         <p className="card-text">{description}</p>
       </div>
       <div className="card-footer">
