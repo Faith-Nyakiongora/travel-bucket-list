@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import DestinationCard from "./DestinationCard";
+import { useBucketListContext } from "./BucketListContext";
 import Form from "react-bootstrap/Form";
 
 function DestinationList({
@@ -11,6 +12,7 @@ function DestinationList({
 }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredDestinations, setFilteredDestinations] = useState([]);
+  const { addToBucketList } = useBucketListContext();
 
   useEffect(() => {
     fetch("http://localhost:3000/places")
@@ -28,12 +30,6 @@ function DestinationList({
     );
     setFilteredDestinations(filteredPlaces);
   }, [destination, searchTerm]);
-
-  function addToBucketList(place) {
-    if (!bucketList.some((addDestination) => addDestination.id === place.id)) {
-      setBucketList((bucketList) => [...bucketList, place]);
-    }
-  }
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);

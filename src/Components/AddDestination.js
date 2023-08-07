@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
@@ -8,6 +9,7 @@ function AddDestination({ addDestination }) {
   const [name, setName] = useState("");
   const [location, setLocation] = useState("");
   const [description, setDescription] = useState("");
+  const [imageUrl, setImageUrl] = useState(""); // New state for image URL
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -15,11 +17,13 @@ function AddDestination({ addDestination }) {
       name,
       location,
       description,
+      image_url: imageUrl, // Include image URL in the data
     };
     addDestination(newDestination);
     setName("");
     setLocation("");
     setDescription("");
+    setImageUrl("");
   };
 
   return (
@@ -53,6 +57,15 @@ function AddDestination({ addDestination }) {
         />
       </Form.Group>
 
+      <Form.Group className="mb-3" controlId="formGridAddress2">
+        <Form.Label>Image URL</Form.Label>
+        <Form.Control
+          type="text"
+          placeholder="Image URL"
+          onChange={(e) => setImageUrl(e.target.value)}
+        />
+      </Form.Group>
+
       <Button variant="primary" type="submit">
         Add Destination
       </Button>
@@ -61,29 +74,3 @@ function AddDestination({ addDestination }) {
 }
 
 export default AddDestination;
-
-//     // <div>
-//     //   <form onSubmit={handleSubmit}>
-//     //     <input
-//     //       type="text"
-//     //       placeholder="Name"
-//     //       value={name}
-//     //       onChange={(e) => setName(e.target.value)}
-//     //     />
-//     //     <input
-//     //       type="text"
-//     //       placeholder="Location"
-//     //       value={location}
-//     //       onChange={(e) => setLocation(e.target.value)}
-//     //     />
-//     //     <input
-//     //       type="text"
-//     //       placeholder="Description"
-//     //       value={description}
-//     //       onChange={(e) => setDescription(e.target.value)}
-//     //     />
-//     //     <button type="submit">Add Destination</button>
-//     //   </form>
-//     // </div>
-//   );
-// }
