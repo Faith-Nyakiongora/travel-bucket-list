@@ -101,7 +101,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 - HTML
 - CSS
-- JavaScript
+- React
 - Bootstrap (for UI framework)
 - Local API (to store bucket list data)
 - Public API (to fetch detailed destination information and images)
@@ -224,4 +224,4 @@ The app uses the local API to fetch destination details and images when a user v
 
 ## Ownership
 
-"Travel Bucket List" is developed and maintained by [Your Name]. If you have any questions or suggestions related to the app, please feel free to reach out to me.
+"Travel Bucket List" is developed and maintained by Collins Wakahenya, Faith Nyakiongora & Ian KIbet. If you have any questions or suggestions related to the app, please feel free to reach out to us. 
