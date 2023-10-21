@@ -98,7 +98,40 @@
       "best_time_to_visit": "Cape Town's peak season is during the summer months (December to February), but Spring (September to November) and Autumn (March to May) offer milder weather and fewer crowds.",
       "traveling_tips": "Be cautious with your belongings, especially in tourist areas. Consider renting a car to explore the surrounding attractions.",
       "attractions": "Table Mountain, Cape of Good Hope, Robben Island, Boulders Beach (penguins), V&A Waterfront, Kirstenbosch National Botanical Garden, and Cape Winelands."
+    },
+    {
+      "name": "Rwanda",
+      "location": "Rwanda",
+      "description": "Beautiful hilly country",
+      "image_url": "",
+      "id": 10
+    },
+    {
+      "name": "",
+      "location": "",
+      "description": "",
+      "image_url": "",
+      "id": 11
+    },
+    {
+      "name": "spain",
+      "location": "spain",
+      "description": "uyfutd7idifkudl",
+      "image_url": "",
+      "id": 12
     }
   ],
-  "bucketlist": []
+  "bucketlist": [
+    {
+      "id": 8,
+      "name": "Marrakesh",
+      "description": "A captivating tapestry of culture, colors, and contrasts.",
+      "location": "Morroco",
+      "image_url": "https://images.unsplash.com/photo-1580746738099-1cb74f972feb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80",
+      "more": "An exotic city in Morocco, famed for its bustling medina, ornate palaces, vibrant markets, and lively atmosphere.",
+      "best_time_to_visit": "Spring (March to May) and Fall (September to November) are ideal due to milder weather.",
+      "traveling_tips": " Dress modestly, especially when visiting religious sites, and be prepared for bartering in the markets (souks).",
+      "attractions": "Jardin Majorelle, Medina (Old Town), Koutoubia Mosque, Bahia Palace, Saadian Tombs, and the vibrant souks."
+    }
+  ]
 }
